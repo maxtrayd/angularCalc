@@ -1,0 +1,49 @@
+<div class="container">
+<h1>Калькулятор</h1>
+
+<input [(ngModel)]="num1" type="number" name="num1" placeholder="Enter Number 1" class="inp">
+<br>
+<input [(ngModel)]="num2" type="number" name="num2" placeholder="Enter Number 2" class="inp">
+<br>
+<br>
+<button (click)='cal_plus()' class="knopka">
+    Додати
+</button>
+<button (click)='cal_minus()' class="knopka">
+    Відняти
+</button>
+<br>
+<button (click)='cal_multiply()' class="knopka">
+    Помножити
+</button>
+<button (click)='cal_divide()' class="knopka">
+    Поділити
+</button>
+<br>
+<h2>Result: {{result}}</h2>
+<br>
+</div>
+
+<style>
+.inp{
+    border-radius: 7px;
+    text-align: center;
+    background-color:seashell;
+}
+.knopka{
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: rgb(172, 87, 39);
+    text-align: center;
+    background-color:rgb(241, 123, 55);
+}
+.container{
+    margin: auto;
+    background-color:tomato;
+    width: 240px;
+    border-radius: 10px;
+    border-color: black;
+    margin-top: 300px;
+}
+</style>
